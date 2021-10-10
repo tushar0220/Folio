@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="static/Realme/images/3d-king-icon-silver.gif" style="width: 550px; height: 550px;">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Kshirsagar - Portfolio</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="{% static 'Realme/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Realme/css/index.css' %}">
+    
+    <!-- jQuery library -->
+    <script src="{% static 'Realme/css/jquery.min.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--<link href="./Styles/index.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="{% static 'Realme/css/index.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'Realme/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'Realme/js/app.js' %}">
+    <link rel="stylesheet" href="{% static 'Realme/js/particles.js' %}">
+    
+    </head>
+
+<body>
+<!--------------------------------------------------Facebook pluggins----------------------------------------------->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/mr_IN/sdk.js#xfbml=1&version=v12.0" nonce="6vM2WctO"></script>
+
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=large&width=110&height=28&appId" width="110" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+
+<!------------------------------------------------Star Rating------------------------------------------------>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+
+<!------------------------------------------------Body------------------------------------------------>
+    <div class="container">
+        <div class="nav_section">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!--<img src="./Images/cross.png" width="30px" height="50px"/>-->
+                <!--<img src="Images/3d-king-icon-silver.gif" alt="Computer man" style="width:40px;height:40px;">-->
+
+                <img src="{% static 'Realme/images/3d-king-icon-silver.gif' %}">
+                <a class="navbar-brand " style="color: gold;" href="#">Tushar Kshirsagar<span>.</span></a>
+                
+                <button class="navbar-toggler" style="border:none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="text-white fa fa-bars"></i>
+                </button>              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">                    
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: goldenrod !important;" href="#">Home</a>
+                    </li>        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                      </li>        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>                      
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>        
+                  </ul>    
+                </div>
+              </nav>
+              </div>
+    </div>
+<!-- ----------------------------------------------Hero Section ------------------------------------------------>
+<div class="hero_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
+            <h3>Hello!</h3>
+            <h1>I<span style="color: goldenrod;">'</span>m Tushar Kshirsagar</h1>
+            <h2 style="color: #975ea3;"><i class="fa fa-laptop" aria-hidden="true"></i> &nbsp; Software Engineer</h2>
+            <h3 style="color: grey;">Let's Build Something Great Together</h3>
+            <p>A passionate Software Engineer. Experience of building Web applications using Python, Django, ORM, SQLAlchemy, Django REST API-DRF, Angular, HTML, CSS, JS and other cool tools and technologies. </p>
+            <div class="btn_container">
+                <button class="btn btn-light animate_animated"><a href="#contact"> Hire Me</a></button>
+
+                <!--------------------------------------------typewriter------------------------------------------------>
+            <button onclick="typeWriter()" class="btn btn-light animate_animated"> Why Me? </button>
+            <p id="demo"></p>
+                
+            </div>
+        </div>
+
+            <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
+                <center>
+                    <!--<img src="./Images/tk5.jpg" />-->
+                    <img src="{% static 'Realme/images/tk5.jpg' %}">                    
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------ About Us Section ------------------------------------------------>
+<div class="about_section" id="about">
+    <div class="container">
+        <div class="row m-0">
+            <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
+                <h2 id="heading" style="color: silver;">Any Questions & Discussions</h2>
+                <div>
+                    <h5 class="lets_talk"><i class="fa fa-comments-o" aria-hidden="true"></i> &nbsp;
+                        Let's Talk <span style="color: goldenrod;">...!</span></h5>
+                </div>
+                <h4 id="info_gmail"><i class="fa fa-envelope-o"> &nbsp; </i>tusharvkshirsagar@gmail.com</h4>
+                <h5 id="info_gmail"><i class="fa fa-whatsapp"> &nbsp; </i>Whatsapp: +91 8149368549</h5>
+                
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12 about_me_right_section">
+                <h2 id="heading" style="color: goldenrod;">About Me</h2>
+                <hr>
+                <p id="txt">Hello, My name is Tushar Kshirsagar and I am Software Engineer. I can build websites as per the requirements. I've Good Communication Skills with Strong analytical & problem-solving skills with a positive attitude. Multitasking, Meticulous, detailed oriented, Self-learner and motivator. Having ability to work with customers and teammates, Open-minded Team player with a high work ethic and proven ability to work in a dynamic environment.</p>
+                <table class="table">
+                    <tr>
+                        <td>Born</td>
+                        <td>: </td>
+                        <td><i class="fa fa-calendar"> &nbsp; &nbsp;</i>20 February 1991</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>: </td>
+                        <td><i class="fa fa-mars"> &nbsp; &nbsp;</i>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Language Known</td>
+                        <td>: </td>
+                        <td><i class="fa fa-language"> &nbsp; &nbsp;</i>English, Hindi, Marathi</td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td>: </td>
+                        <td><i class="fa fa-globe"> &nbsp; &nbsp;</i><a href="https://letsbuy0220.herokuapp.com" target="_blank">https://letsbuy0220.herokuapp.com</a></td>
+                    </tr>
+                </table>
+                <button class="btn btn-light btn-sm animate_animated"><a href="Tushar Kshirsagar_Software Engineer_Resume.pdf"></a>Download CV</button>
+
+                <!--<button class="btn"><i class="fa fa-download"></i> <a  href="{ Resume_Tushar Kshirsagar_Software Engineer.pdf.url }"></a> Download CV </a></button>-->
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------ Skills Section ------------------------------------------------>
+
+<div class="skills_section" id="skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12 skills_section_left_section">
+                <div> 
+                    <h1 class="text-white" id="heading">My Skills <span style="color: goldenrod;">.</span></h1>
+                    <hr>
+                    <p>You can see my skills in which I have expertise <span style="color: goldenrod;">.</span></p>
+                    <div class="social_media_icons">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a>Let's Buy E-commerce </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a>Professional Portfolio</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a>ERP & Finance Domain</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--<img src="Images/new-animation-gif-gold.gif" alt="Computer man" style="width:50px;height:40px;">-->
+                    <img src="{% static 'Realme/images/new-animation-gif-gold.gif' %}">
+                  
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12 skills_section_right_section">
+                <div>
+                    <div class="each_skills">
+                        <span>Python, Django</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 88%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="each_skills">
+                        <span>Django REST API Framework</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="each_skills">
+                        <span>MySQL, ORM, SQLAlchemy</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="each_skills">
+                        <span>HTML, CSS, JS, Bootstrap</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="each_skills">
+                        <span>Angular, Flask</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="each_skills">
+                        <span>Interpersonal Skill</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------ Portfolio Section ------------------------------------------------>
+<div class="portfolio_section" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="text-white text-center">My Portfolio <span style="color: goldenrod;">.</span></h1><hr>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <nav class="d-flex justify-content-center">
+					<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+						
+                        <a class="nav-item nav-link active text-white" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">HTML</a>
+
+						<a class="nav-item nav-link text-white" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Django</a>
+					</div>
+				</nav>
+
+				<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+
+					<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+						<div class="card-columns">
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/html/my_portfolio_old1.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/html/my_portfolio_old2.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/html/my_portfolio_old3.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/html/my_portfolio_old4.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/html/my_portfolio_old5.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/html/my_portfolio_old6.png' %}" width="360px" height="200px">
+                            </div>
+                        </div>
+					</div>
+
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+							<div class="card-columns">
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy1.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy2.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy3.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy4.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy5.png' %}" width="360px" height="200px">
+                            </div>
+
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy6.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy7.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy8.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy9.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy10.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy11.png' %}" width="360px" height="200px">
+                            </div>
+                            <div class="card border-0 padding-0">
+                                <img src="{% static 'Realme/images/portfolio/django/letsbuy12.png' %}" width="360px" height="200px">
+                            </div>
+                   
+                        </div>	
+
+					</div>
+			</div>
+            </div>
+        </div>
+		</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------Blog Section------------------------------------------------>
+<div class="blogs_section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 id="heading" class="text-white text-center">Blogs <span style="color: goldenrod;">.</span></h1>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="card animate_animated border-0">
+                    <div class="card-header border-0 p-0">
+                        <img src="{% static 'Realme/images/blogs/1.jpg' %}" width="350px" height="250px">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="title" style="color: black;">Web Development</h3>
+                        <p style="color: black;">Web Application Development by using Python, Django, DRF, MySQL</p>
+                        <a class="text-decoration-none read_more" href="#">Read More</a>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="card animate_animated border-0">
+                    <div class="card-header border-0 p-0">
+                        <img src="{% static 'Realme/images/blogs/2.jpg' %}" width="350px" height="250px">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="title" style="color: black;">Web Designing</h3>
+                        <p style="color: black;">Web Designing Development by using HTML, CSS, JS, Bootstrap, Angular</p>
+                        <a class="text-decoration-none read_more" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="card animate_animated border-0">
+                    <div class="card-header border-0 p-0">
+                        <img src="{% static 'Realme/images/blogs/testing.jpg' %}" width="350px" height="250px">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="title" style="color: black;">Software Testing</h3>
+                        <p style="color: black;">Manual and Automation testing using JavaScript and PythonScript.</p>
+                        <a class="text-decoration-none read_more" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!------------------------------------------------Contact Section------------------------------------------------>
+
+<div class="contact_section" id="contact">
+    <div class="container">
+
+        <div class="row m-0">
+            <div class="col-lg-6 col-md-6 co-sm-12 col-xs-12">
+                <div>
+                <h3 class="heading">Get In Touch<span style="color: goldenrod;">.</span></h3>
+                <hr>
+                <p class="txt"><i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp; Feel free to contact me.</p>
+                
+
+                <form action="#" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Your Name" type="text" name="name" />
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Your Email" type="email" name="email"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Your Number" type="text" name="number"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Subject" type="text" name="subject"/>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Type Your Message..."name="message"></textarea>
+                    </div>
+                    
+                    <!--Select a file to upload:<input type="file" name="selectedfile"><br><br>-->
+                    
+                    <div class="form-group">
+                        <button class="btn btn-light animate_animated" type="submit">Submit</button>
+                        <button class="btn btn-light animate_animated" type="reset">Reset</button>
+                        
+                    </div>
+                </form>
+                </div>
+            </div>
+            
+        <div class="col-lg-6 col-md-6 co-sm-12 col-xs-12">
+            <div>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fa fa-envelope-o"></i> <a href="https://mail.google.com/" target="_blank">tusharvkshirsagar@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone"></i> <a href="tel:+91 8149368549">+91 8149368549</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker"></i> <a href="Address: Karve Nagar, Pune - 411052">A-12, Shivshahi Colony, Karve Nagar, Pune–411052, Maharashtra.</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="map-wrapper">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="525" height="327" id="gmap_canvas" src="https://maps.google.com/maps?q=Karve%20Nagar%20Pune%20Maharashtra&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yt2.org">yt2</a><br><style>.mapouter{position:relative;text-align:right;height:327px;width:525px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:327px;width:525px;}</style></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!------------------------------------------------Footer Section------------------------------------------------>
+
+<div class="footer-area">
+    <div class="container">
+        <div class="row py-5">
+            <div class="logo-area col-lg-4 col-md-4 col-sm-12 col-12">
+                <img src="{% static 'Realme/images/3d-king-icon-silver.gif' %}">
+
+
+                <a class="navbar-brand " style="color: goldenrod;" href="#">Tushar Kshirsagar<span style="color: goldenrod;">.</span></a>
+                <p>Tushar Kshirsagar has been working in the IT Industry since 5+ years with different MNC's in various fields and locations.</p>
+                <div class="links">
+                    <a href="https://www.facebook.com/tushar.kshirsagar.35/about" target="_blank"><i class="fa fa-facebook-square animate_animated"></i></a>
+                    <a href="https://www.skype.com/en/" target="_blank"><i class="fa fa-skype px-1 animate_animated"></i></a>
+                    <a href="https://twitter.com/tushark0220" target="_blank"><i class="fa fa-twitter-square animate_animated"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 column">
+                <h4 class="heading">Skills <span style="color: goldenrod;">.</span></h4>
+                <ul class="list-group">
+                    <li class="list-group-item border-0 bg-transparent">
+                        <i class="fa fa-chevron-right"></i> <span>Python</span>
+                    </li>
+                    <li class="list-group-item border-0 bg-transparent">
+                        <i class="fa fa-chevron-right"></i> <span>Django</span>
+                    </li>
+                    <li class="list-group-item border-0 bg-transparent">
+                        <i class="fa fa-chevron-right"></i> <span>Django REST API Framework</span>
+                    </li>
+                    <li class="list-group-item border-0 bg-transparent">
+                        <i class="fa fa-chevron-right"></i> <span>MySQL</span>
+                    </li>
+                    <li class="list-group-item border-0 bg-transparent">
+                        <i class="fa fa-chevron-right"></i> <span>ORM, SQLAlchemy</span>
+                    </li>
+                    <li class="list-group-item border-0 bg-transparent">
+                        <i class="fa fa-chevron-right"></i> <span>HTML, CSS, JS, Bootstrap, Angular</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 column">
+                <h4 class="heading">Useful Links <span style="color: goldenrod;">.</span></h4>
+                <ul class="list-group">
+                    <li class="list-group-item border-0 bg-transparent">
+                        <i class="fa fa-chevron-right" ></i> <span><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></span>
+                    </li>
+                    <li class="list-group-item border-0 bg-transparent">
+                        <i class="fa fa-chevron-right"></i> <span><a href="https://www.geeksforgeeks.org/" target="_blank"> GeeksForGeeks </a></span>
+                    </li>
+                    <li class="list-group-item border-0 bg-transparent">
+                        <i class="fa fa-chevron-right"></i> <span><a href="https://github.com/" target="_blank"> GitHub </a></span>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        <!------------------------------------------------Star Rating------------------------------------------------>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+
+
+        </div>
+        <p style="text-align: center;"> © Copyright 2021. Template Crafted By Tushar Kshirsagar. All Rights Reserved.</p>
+    </div>
+</div>
+
+<!------------------------------------------------Top Button------------------------------------------------>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!------------------------------------------------Callout pop up msg------------------------------------------------>
+<div class="callout">
+    <div class="callout-header"><img src="{% static 'Realme/images/2-years-jubilee-animation-gold.gif' %}" alt="Computer man" style="width:240px; height:130px;"></div>
+    
+
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <div class="callout-container">
+      <h6 style="color: rgb(20, 49, 20);">Let's Build Something Great Together!</h6>
+      <p>Contact Tushar for further Discussions!</p>
+      <small><i class="fa fa-envelope-o"></i> tusharvkshirsagar@gmail.com</small><br>
+      <small><i class="fa fa-phone"></i> +91 8149368549</small>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<div id="particles-js"></div>
+<!--<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>-->
+<script src="{% static 'Realme/js/particles.min.js' %}"></script>
+<script>
+    particlesJS.load('particles-js', 'particles.json',
+    function(){
+        console.log('particles.json loaded...')
+    })
+</script>
+<!--<script type="text/javascript" src="./Js/app.js"></script>-->
+<script type="text/javascript" src="{% static 'Realme/js/app.js' %}"></script>
+
+<!--<script type="text/javascript" src="./Js/particles.js"></script>-->
+<script type="text/javascript" src="{% static 'Realme/js/particles.js' %}"></script>
+</body>
+</html>
